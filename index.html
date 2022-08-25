@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/avatar.png">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/all.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- Player main -->
+    <div class="player">
+        <!-- Dashboard -->
+        <div class="dashboard">
+            <!-- header -->
+            <header class="header">
+                <h4 class="title">Now Playing:</h4>
+                <h2 class="name-song"></h2>
+            </header>
+
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd-thumb"></div>
+            </div>
+
+            <!-- control -->
+            <div class="control">
+                <div class="btn btn-random">
+                    <i class="btn-icon fa-solid fa-shuffle"></i>
+                </div>
+
+                <div class="btn btn-prev">
+                    <i class="btn-icon fa-solid fa-backward-step"></i>
+                </div>
+
+                <div class="btn btn-play">
+                    <i class="btn-icon play fa-solid fa-play" style="margin-left: 3px"></i>
+                    <i class="btn-icon pause fa-solid fa-pause"></i>
+                </div>
+
+                <div class="btn btn-next">
+                    <i class="btn-icon fa-solid fa-forward-step"></i>
+                </div>
+
+                <div class="btn btn-repeat">
+                    <i class="btn-icon fa-solid fa-arrows-rotate"></i>
+                </div>
+            </div>
+
+            <!-- progress -->
+            <input id="progress" class="progress" type="range" value="0" min="0" step="1" max="100">
+        </div>
+
+        <!-- playlists -->
+        <div class="playlist"></div>
+
+        <!-- audio -->
+        <audio id="audio" src="./assets/musics/song1.mp3"></audio>
+    </div>
+</body>
+
+<script src="./assets/js/main.js"></script>
+
+</html>
